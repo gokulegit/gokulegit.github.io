@@ -1,5 +1,5 @@
 {
-    "name": "my-portfolio-2023",
+    "name": "gokulegit.github.io",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
@@ -11,7 +11,7 @@
         "react-scripts": "5.0.1",
         "web-vitals": "^2.1.0"
     },
-    "homepage": "http://gokulegit.github.io/my-portfolio-2023",
+    "homepage": "http://gokulegit.github.io/",
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
