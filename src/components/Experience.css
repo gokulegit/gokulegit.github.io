@@ -1,0 +1,146 @@
+.experience {
+  background: var(--dark);
+}
+
+.timeline {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--primary), var(--secondary), var(--accent));
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+  animation: slideInRight 0.8s ease backwards;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -2.5rem;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--primary);
+  border: 3px solid var(--dark);
+  box-shadow: 0 0 0 3px var(--primary);
+}
+
+.timeline-content {
+  background: var(--dark-light);
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  margin-left: 2rem;
+}
+
+.timeline-content:hover {
+  transform: translateX(8px);
+  border-color: var(--primary);
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.1);
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.timeline-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.timeline-company {
+  font-size: 1.1rem;
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.timeline-location {
+  font-size: 0.9rem;
+  color: var(--gray-light);
+}
+
+.timeline-period {
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--primary);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.timeline-description {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.timeline-description li {
+  color: var(--gray-light);
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.timeline-description li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.timeline-highlights {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 1rem;
+  }
+
+  .timeline-marker {
+    left: -1.5rem;
+  }
+
+  .timeline-content {
+    margin-left: 1rem;
+    padding: 1.5rem;
+  }
+
+  .timeline-header {
+    flex-direction: column;
+  }
+
+  .timeline-period {
+    align-self: flex-start;
+  }
+
+  .timeline-title {
+    font-size: 1.25rem;
+  }
+}
+
