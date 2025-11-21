@@ -24,8 +24,11 @@ const Hero = () => {
         <div className="gradient-orb orb-3"></div>
       </div>
       <div className="hero-content">
+        <div className="hero-profile">
+          <img src="/profile.png" alt="Gokul Elumalai" className="profile-image" />
+        </div>
         <div className="hero-badge">
-          <span className="badge">👋 Available for opportunities</span>
+          <span className="badge">Available for opportunities</span>
         </div>
         <h1 className="hero-title">
           Hi, I'm <span className="gradient-text">Gokul Elumalai</span>
@@ -42,8 +45,8 @@ const Hero = () => {
             <div className="stat-label">Years Experience</div>
           </div>
           <div className="stat">
-            <div className="stat-number">99%</div>
-            <div className="stat-label">Automation Rate</div>
+            <div className="stat-number">6+</div>
+            <div className="stat-label">Tech Stacks</div>
           </div>
           <div className="stat">
             <div className="stat-number">2x</div>

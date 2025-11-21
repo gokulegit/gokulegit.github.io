@@ -80,7 +80,7 @@ const Contact = () => {
 
       <footer className="footer">
         <div className="footer-content">
-          <p>&copy; 2024 Gokul Elumalai. All rights reserved.</p>
+          <p>&copy; 2025 Gokul Elumalai. All rights reserved.</p>
           <p className="footer-tagline">Built with React & ❤️</p>
         </div>
       </footer>

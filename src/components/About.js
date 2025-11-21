@@ -34,11 +34,26 @@ const About = () => {
               and maintain the <strong>TreeifyTask C# library</strong> under Intuit's public GitHub.
             </p>
             <p>
-              I've also worked on <strong>AI projects</strong> including E-Filing Assist, OMNI AI (Incident RCA helper), 
-              and Intuit Tax Research - all <strong>applied for patenting</strong>. With minimal Spring Boot knowledge, 
-              I singlehandedly <strong>migrated the DCM backend server to MSaaS</strong> with zero production issues. 
-              I built a <strong>custom cloud formation stack using AWS CDK and Route53</strong> for UFT license server 
-              hosting, despite limited prior familiarity.
+              I've also worked on <strong>AI projects</strong> including E-Filing Assist, <strong>OMNI AI (Incident RCA helper)</strong>, 
+              and Intuit Tax Research - all <strong>applied for patenting</strong>. For OMNI AI, I developed a 
+              <strong> Slack bot</strong> using <strong>AWS CDK with Lambda functions</strong>, integrating with Intuit's GenOS 
+              platform to provide intelligent incident root cause analysis. This demonstrates my ability to quickly adapt to new 
+              technologies and deliver production-ready solutions.
+            </p>
+            <p>
+              With minimal Spring Boot knowledge, I singlehandedly <strong>migrated the DCM backend server to MSaaS</strong> 
+              (Modern SaaS platform at Intuit with paved roads for microservices) with <strong>zero production issues and zero 
+              downtime</strong>. This involved moving a custom service to Intuit's standardized microservices platform while 
+              maintaining complete reliability. I also built a <strong>custom cloud formation stack using AWS CDK and Route53 </strong> 
+              for UFT license server hosting in a Modern SaaS environment, demonstrating proficiency with infrastructure as code.
+            </p>
+            <p>
+              As a <strong>Staff Engineer</strong>, I actively build <strong>team rapport and collaboration</strong> by keeping my 
+              team ahead of the curve and identifying opportunities for visibility. I actively participate in 
+              <strong> GED (Global Engineering Days)</strong> at Intuit, exploring innovative ideas and encouraging the team to 
+              showcase their work. I <strong>enable team members with my expertise</strong> in reverse engineering, system design, 
+              and emerging technologies, ensuring they have the skills and confidence to tackle complex challenges. My leadership 
+              style focuses on creating opportunities for growth, recognition, and technical excellence across the team.
             </p>
             <p>
               Prior to Intuit, I spent 5 years at <strong>Philips Electronics India</strong> as a Software Technologist, 
@@ -63,6 +78,16 @@ const About = () => {
                 Designed solutions that delight customers - from seamless data transfer to hosting 
                 environments, to eliminating system reboots with silent updates. Successfully handled 
                 multiple peak tax filing seasons with zero downtime.
+              </p>
+            </div>
+
+            <div className="about-card">
+              <h3>Leadership & Enablement</h3>
+              <p>
+                As Staff Engineer, I build team collaboration and keep members ahead through GED 
+                (Global Engineering Days) participation and idea exploration. I enable the team with 
+                expertise in reverse engineering, system design, and emerging tech, creating opportunities 
+                for growth and visibility.
               </p>
             </div>
 
