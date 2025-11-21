@@ -4,19 +4,23 @@ import './Experience.css';
 const Experience = () => {
   const experiences = [
     {
-      title: 'Staff Software Engineer',
+      title: 'Staff Software Engineer & Scrum Master',
       company: 'Intuit India',
       location: 'Ecospace, Bellandur, Bengaluru',
       period: '2020 - Present',
       description: [
-        'Led development of Lacerte, the premier desktop application for US tax filing',
-        'Achieved 75% to 99% improvement in data conversion automation efficiency',
+        'Currently leading Tax Engine Modernization team as Scrum Master, managing deliverables and team of 5',
+        'Modernizing 30-year-old legacy TPS C++ Engine powering TurboTax, TurboTax Desktop, ProSeries and other products',
+        'Delivered significant performance and memory optimization through thorough internal engine analysis',
+        'Previously led development of Lacerte, achieving 75% to 99% data conversion automation efficiency',
+        'Designed and implemented Chrome-like Silent Updater system for Lacerte',
         'Reduced conversion time from 2-3 hours to mere minutes through reverse engineering',
-        'Managed teams of 2-5 members, facilitating collaborative success',
+        'Built AI projects: E-Filing Assist, OMNI AI (Incident RCA), Intuit Tax Research (Patent applications)',
+        'Migrated DCM backend to MSaaS with zero production issues',
         'Authored and maintain TreeifyTask C# library (open source)',
-        'Tech stack: Java, C#, Python, JS, React, AWS, Jenkins, ArgoCD'
+        'Tech stack: C++, Java, C#, Python, JS, React, Spring Boot, AWS, Jenkins, ArgoCD, LangChain'
       ],
-      highlights: ['99% Automation', 'Team Lead', 'Open Source']
+      highlights: ['Scrum Master', 'Legacy Modernization', '99% Automation', 'Patents', 'Open Source']
     },
     {
       title: 'Software Technologist II',

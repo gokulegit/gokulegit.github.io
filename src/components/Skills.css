@@ -81,17 +81,8 @@
   height: 100%;
   background: var(--gradient);
   border-radius: 4px;
-  animation: fillBar 1.5s ease forwards;
+  transition: width 1.5s ease;
   width: 0;
-}
-
-@keyframes fillBar {
-  from {
-    width: 0;
-  }
-  to {
-    width: var(--target-width);
-  }
 }
 
 .expertise-section {

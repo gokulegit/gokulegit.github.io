@@ -8,10 +8,11 @@ const Skills = () => {
       icon: '💻',
       skills: [
         { name: 'C#', level: 95 },
-        { name: 'Java', level: 85 },
-        { name: 'Python', level: 85 },
+        { name: 'C++', level: 65 },
+        { name: 'Java', level: 75 },
+        { name: 'Python', level: 80 },
         { name: 'JavaScript', level: 90 },
-        { name: 'TypeScript', level: 80 },
+        { name: 'TypeScript', level: 65 },
         { name: 'SQL', level: 85 }
       ]
     },
@@ -19,10 +20,10 @@ const Skills = () => {
       title: 'Frontend',
       icon: '🎨',
       skills: [
-        { name: 'React.js', level: 90 },
+        { name: 'React.js', level: 85 },
         { name: 'WPF', level: 95 },
         { name: 'HTML/CSS', level: 90 },
-        { name: 'TailwindCSS', level: 85 },
+        { name: 'TailwindCSS', level: 50 },
         { name: 'WinForms', level: 90 }
       ]
     },
@@ -33,19 +34,19 @@ const Skills = () => {
         { name: '.NET Framework', level: 95 },
         { name: '.NET Core', level: 90 },
         { name: 'Node.js', level: 80 },
-        { name: 'ASP.NET', level: 90 },
-        { name: 'WCF', level: 85 }
+        { name: 'ASP.NET', level: 60 },
+        { name: 'WCF', level: 60 }
       ]
     },
     {
       title: 'Cloud & DevOps',
       icon: '☁️',
       skills: [
-        { name: 'AWS', level: 15 },
-        { name: 'Jenkins', level: 85 },
-        { name: 'ArgoCD', level: 80 },
+        { name: 'AWS', level: 50 },
+        { name: 'Jenkins', level: 75 },
+        { name: 'ArgoCD', level: 60 },
         { name: 'CI/CD', level: 90 },
-        { name: 'Docker', level: 75 }
+        { name: 'Docker', level: 60 }
       ]
     },
     {
