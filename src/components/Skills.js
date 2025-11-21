@@ -5,7 +5,6 @@ const Skills = () => {
   const skillCategories = [
     {
       title: 'Languages',
-      icon: '💻',
       skills: [
         { name: 'C#', level: 95 },
         { name: 'C++', level: 65 },
@@ -18,7 +17,6 @@ const Skills = () => {
     },
     {
       title: 'Frontend',
-      icon: '🎨',
       skills: [
         { name: 'React.js', level: 85 },
         { name: 'WPF', level: 95 },
@@ -29,7 +27,6 @@ const Skills = () => {
     },
     {
       title: 'Backend',
-      icon: '⚙️',
       skills: [
         { name: '.NET Framework', level: 95 },
         { name: '.NET Core', level: 90 },
@@ -40,7 +37,6 @@ const Skills = () => {
     },
     {
       title: 'Cloud & DevOps',
-      icon: '☁️',
       skills: [
         { name: 'AWS', level: 50 },
         { name: 'Jenkins', level: 75 },
@@ -51,7 +47,6 @@ const Skills = () => {
     },
     {
       title: 'Databases',
-      icon: '🗄️',
       skills: [
         { name: 'SQL Server', level: 90 },
         { name: 'MySQL', level: 85 },
@@ -61,7 +56,6 @@ const Skills = () => {
     },
     {
       title: 'Specialized',
-      icon: '🔬',
       skills: [
         { name: 'Reverse Engineering', level: 90 },
         { name: 'IDA Disassembler', level: 85 },
@@ -97,7 +91,6 @@ const Skills = () => {
           {skillCategories.map((category, index) => (
             <div key={index} className="skill-category" style={{ animationDelay: `${index * 0.1}s` }}>
               <div className="category-header">
-                <span className="category-icon">{category.icon}</span>
                 <h3 className="category-title">{category.title}</h3>
               </div>
               <div className="skills-list">

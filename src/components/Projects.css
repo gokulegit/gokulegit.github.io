@@ -25,12 +25,20 @@
   box-shadow: 0 20px 40px rgba(99, 102, 241, 0.15);
 }
 
-.project-icon {
-  font-size: 3rem;
+.project-header {
   margin-bottom: 1rem;
 }
 
-.project-header {
+.project-category {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  background: var(--gradient);
+  color: var(--white);
   margin-bottom: 1rem;
 }
 
@@ -74,7 +82,7 @@
 .project-impact {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: center;
   padding: 0.75rem 1rem;
   background: rgba(236, 72, 153, 0.1);
   border-radius: 8px;
@@ -82,14 +90,11 @@
   margin-top: auto;
 }
 
-.impact-icon {
-  font-size: 1.2rem;
-}
-
 .impact-text {
   color: var(--accent);
   font-weight: 600;
   font-size: 0.9rem;
+  text-align: center;
 }
 
 .project-link {
