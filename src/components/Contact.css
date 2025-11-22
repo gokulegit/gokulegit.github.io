@@ -80,6 +80,35 @@
   box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
 }
 
+.btn-pdf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 3rem auto 2rem;
+  padding: 1.25rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 12px;
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(255, 126, 95, 0.3);
+  width: fit-content;
+}
+
+.btn-pdf:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(255, 126, 95, 0.4);
+  background: linear-gradient(45deg, #ff6b4a, #fda062);
+}
+
+.btn-pdf svg {
+  flex-shrink: 0;
+}
+
 .footer {
   margin-top: auto;
   padding: 2rem 0;

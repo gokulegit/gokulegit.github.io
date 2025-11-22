@@ -28,7 +28,7 @@ const Hero = () => {
           <img src="/profile.png" alt="Gokul Elumalai" className="profile-image" />
         </div>
         <div className="hero-badge">
-          <span className="badge">Available for opportunities</span>
+          <span className="badge">👋 Available for opportunities</span>
         </div>
         <h1 className="hero-title">
           Hi, I'm <span className="gradient-text">Gokul Elumalai</span>

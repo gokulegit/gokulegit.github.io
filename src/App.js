@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -7,8 +8,9 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Navigation from './components/Navigation';
+import PrintableResume from './components/PrintableResume/PrintableResume';
 
-function App() {
+function MainApp() {
   const [activeSection, setActiveSection] = useState('hero');
   const [scrollProgress, setScrollProgress] = useState(0);
 
@@ -47,6 +49,17 @@ function App() {
       <Projects />
       <Contact />
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainApp />} />
+        <Route path="/print" element={<PrintableResume />} />
+      </Routes>
+    </Router>
   );
 }
 

@@ -265,5 +265,10 @@
     width: 300px;
     height: 300px;
   }
+
+  /* Hide scroll indicator on mobile to prevent overlap */
+  .scroll-indicator {
+    display: none;
+  }
 }
 
