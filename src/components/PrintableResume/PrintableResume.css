@@ -27,10 +27,24 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   page-break-after: always;
   position: relative;
+  overflow: visible;
 }
 
 .print-page:last-child {
   page-break-after: auto;
+}
+
+/* Ensure page 2 content starts at top and is visible */
+.print-page:nth-child(2) {
+  padding-top: 12mm;
+  display: block;
+  visibility: visible;
+  page-break-before: always;
+}
+
+.print-page:nth-child(2) .print-section:first-child {
+  margin-top: 0;
+  padding-top: 0;
 }
 
 /* Header - Compact */
@@ -420,14 +434,26 @@
 
   .print-page {
     page-break-after: always;
+    page-break-inside: avoid;
     box-shadow: none;
     margin: 0;
     width: 100%;
     padding: 10mm;
+    min-height: 100vh;
+    height: auto;
+    overflow: visible;
+  }
+
+  .print-page:nth-child(2) {
+    page-break-before: always;
   }
 
   .print-page:last-child {
     page-break-after: auto;
+  }
+
+  .print-section {
+    page-break-inside: avoid;
   }
 }
 

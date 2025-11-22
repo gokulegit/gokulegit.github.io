@@ -1,7 +1,37 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './PrintableResume.css';
+import { trackPrint } from '../../utils/analytics';
 
 const PrintableResume = () => {
+  useEffect(() => {
+    // Track when print page is viewed
+    const checkAndTrack = () => {
+      if (typeof window !== 'undefined' && window.goatcounter) {
+        trackPrint();
+      } else {
+        setTimeout(checkAndTrack, 100);
+      }
+    };
+    checkAndTrack();
+
+    // Track actual print action
+    const handleBeforePrint = () => {
+      trackPrint();
+    };
+
+    const handleAfterPrint = () => {
+      trackPrint();
+    };
+
+    window.addEventListener('beforeprint', handleBeforePrint);
+    window.addEventListener('afterprint', handleAfterPrint);
+
+    return () => {
+      window.removeEventListener('beforeprint', handleBeforePrint);
+      window.removeEventListener('afterprint', handleAfterPrint);
+    };
+  }, []);
+
   return (
     <div className="printable-container">
       {/* Page 1 */}

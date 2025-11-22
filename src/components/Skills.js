@@ -85,6 +85,51 @@ const Skills = () => {
     <section id="skills" className="skills">
       <div className="container">
         <h2 className="section-title">Skills & Expertise</h2>
+        
+        <div className="specialized-achievements">
+          <div className="project-card" style={{ animationDelay: '0.1s' }}>
+            <div className="project-header">
+              <div className="project-category">Reverse Engineering</div>
+              <h3 className="project-title">TaxAct Database Decryption</h3>
+              <div className="project-company">Data Conversion for Lacerte</div>
+            </div>
+            <p className="project-description">
+              Successfully reverse-engineered TaxAct application's database encryption using IDA Disassembler and x64dbg tool, enabling seamless data conversion for Lacerte. Cracked the evolving decryption 
+              algorithms that change annually, ensuring continuous compatibility across multiple 
+              tax seasons.
+            </p>
+            <div className="project-tech">
+              <span className="tech-tag">IDA Disassembler</span>
+              <span className="tech-tag">Binary Analysis</span>
+              <span className="tech-tag">Crypto Analysis</span>
+            </div>
+            <div className="project-impact">
+              <span className="impact-text">Annual decryption algorithm updates</span>
+            </div>
+          </div>
+
+          <div className="project-card" style={{ animationDelay: '0.2s' }}>
+            <div className="project-header">
+              <div className="project-category">Reverse Engineering</div>
+              <h3 className="project-title">ProSystemFX Conversion</h3>
+              <div className="project-company">Legacy Format Analysis</div>
+            </div>
+            <p className="project-description">
+              Reverse-engineered ProSystemFX proprietary data formats and file structures, 
+              enabling automated conversion to Lacerte. Achieved 75% → 98% automation coverage 
+              through deep binary analysis and format mapping.
+            </p>
+            <div className="project-tech">
+              <span className="tech-tag">File Format Analysis</span>
+              <span className="tech-tag">Python</span>
+              <span className="tech-tag">Automation</span>
+            </div>
+            <div className="project-impact">
+              <span className="impact-text">75% → 98% automation coverage</span>
+            </div>
+          </div>
+        </div>
+
         <p className="section-subtitle">Technologies and tools I work with</p>
         
         <div className="skills-grid">
