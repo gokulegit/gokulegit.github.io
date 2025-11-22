@@ -30,7 +30,8 @@ const Contact = () => {
   ];
 
   const handleDownloadPdf = () => {
-    window.open('/print', '_blank');
+    const baseUrl = window.location.href.split('#')[0];
+    window.open(`${baseUrl}#/print`, '_blank');
   };
 
   return (

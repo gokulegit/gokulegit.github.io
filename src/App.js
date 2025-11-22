@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import './App.css';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -61,7 +61,9 @@ function PageViewTracker() {
     // Wait for GoatCounter to load, then track page view
     const checkAndTrack = () => {
       if (typeof window !== 'undefined' && window.goatcounter) {
-        trackPageView(location.pathname);
+        // HashRouter provides pathname without hash, but we'll use it as-is
+        const path = location.pathname || '/';
+        trackPageView(path);
       } else {
         // Retry after a short delay if GoatCounter hasn't loaded yet
         setTimeout(checkAndTrack, 100);
@@ -74,25 +76,57 @@ function PageViewTracker() {
   return null;
 }
 
+// Debug component to see current route
+function RouteDebugger() {
+  const location = useLocation();
+  useEffect(() => {
+    console.log('Current route pathname:', location.pathname);
+    console.log('Current hash:', window.location.hash);
+    console.log('Full location:', location);
+  }, [location]);
+  return null;
+}
+
 function App() {
+  const [currentPath, setCurrentPath] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const hash = window.location.hash;
+      return hash ? hash.slice(1) : '/';
+    }
+    return '/';
+  });
+
+  useEffect(() => {
+    // Listen for hash changes
+    const handleHashChange = () => {
+      const hash = window.location.hash;
+      setCurrentPath(hash ? hash.slice(1) : '/');
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+
   useEffect(() => {
     // Track initial page load
     const initTracking = () => {
       if (typeof window !== 'undefined' && window.goatcounter) {
-        trackPageView(window.location.pathname);
+        const path = currentPath;
+        trackPageView(path);
       } else {
         setTimeout(initTracking, 100);
       }
     };
     initTracking();
-  }, []);
+  }, [currentPath]);
 
   return (
     <Router>
+      <RouteDebugger />
       <PageViewTracker />
       <Routes>
-        <Route path="/" element={<MainApp />} />
         <Route path="/print" element={<PrintableResume />} />
+        <Route path="/" element={<MainApp />} />
       </Routes>
     </Router>
   );
