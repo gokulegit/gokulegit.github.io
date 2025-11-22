@@ -104,7 +104,7 @@ const Skills = () => {
               <span className="tech-tag">Crypto Analysis</span>
             </div>
             <div className="project-impact">
-              <span className="impact-text">Annual decryption algorithm updates</span>
+              <span className="impact-text">Data Conversion stability for Lacerte</span>
             </div>
           </div>
 
@@ -116,7 +116,7 @@ const Skills = () => {
             </div>
             <p className="project-description">
               Reverse-engineered ProSystemFX proprietary data formats and file structures, 
-              enabling automated conversion to Lacerte. Achieved 75% → 98% automation coverage 
+              enabling automated conversion to Lacerte. Achieved 75% → 99% automation coverage 
               through deep binary analysis and format mapping.
             </p>
             <div className="project-tech">
@@ -125,7 +125,7 @@ const Skills = () => {
               <span className="tech-tag">Automation</span>
             </div>
             <div className="project-impact">
-              <span className="impact-text">75% → 98% automation coverage</span>
+              <span className="impact-text">75% → 99% automation coverage</span>
             </div>
           </div>
         </div>
