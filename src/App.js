@@ -76,17 +76,6 @@ function PageViewTracker() {
   return null;
 }
 
-// Debug component to see current route
-function RouteDebugger() {
-  const location = useLocation();
-  useEffect(() => {
-    console.log('Current route pathname:', location.pathname);
-    console.log('Current hash:', window.location.hash);
-    console.log('Full location:', location);
-  }, [location]);
-  return null;
-}
-
 function App() {
   const [currentPath, setCurrentPath] = useState(() => {
     if (typeof window !== 'undefined') {
@@ -122,7 +111,6 @@ function App() {
 
   return (
     <Router>
-      <RouteDebugger />
       <PageViewTracker />
       <Routes>
         <Route path="/print" element={<PrintableResume />} />

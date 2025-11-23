@@ -2,32 +2,6 @@ import React from 'react';
 import './Contact.css';
 
 const Contact = () => {
-  const contactInfo = [
-    {
-      icon: '📧',
-      label: 'Email',
-      value: 'gokul.jai_e@yahoo.com',
-      link: 'mailto:gokul.jai_e@yahoo.com'
-    },
-    {
-      icon: '💬',
-      label: 'WhatsApp',
-      value: '+91 70260 53581',
-      link: 'https://wa.me/917026053581'
-    },
-    {
-      icon: '📱',
-      label: 'Phone',
-      value: '+91 70260 53581',
-      link: 'tel:+917026053581'
-    },
-    {
-      icon: '📍',
-      label: 'Location',
-      value: 'Horamavu, Bengaluru, India',
-      link: null
-    }
-  ];
 
   const handleDownloadPdf = () => {
     const baseUrl = window.location.href.split('#')[0];
