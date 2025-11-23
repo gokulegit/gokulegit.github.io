@@ -86,7 +86,7 @@ const Skills = () => {
       <div className="container">
         <h2 className="section-title">Skills & Expertise</h2>
         
-        <div className="specialized-achievements">
+        {/* <div className="specialized-achievements">
           <div className="project-card" style={{ animationDelay: '0.1s' }}>
             <div className="project-header">
               <div className="project-category">Reverse Engineering</div>
@@ -128,7 +128,7 @@ const Skills = () => {
               <span className="impact-text">75% → 99% automation coverage</span>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <p className="section-subtitle">Technologies and tools I work with</p>
         
