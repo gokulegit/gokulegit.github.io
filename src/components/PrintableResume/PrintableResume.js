@@ -43,6 +43,9 @@ const PrintableResume = () => {
             <div className="print-header-content">
               <h1 className="print-name">GOKUL ELUMALAI</h1>
               <div className="print-title">Staff Software Engineer</div>
+              <div className="print-website-row">
+                <span>🌐 <a href="https://gokulegit.github.io" className="header-link">gokulegit.github.io</a></span>
+              </div>
               <div className="print-contact-row">
                 <span>📧 gokul.jai_e@yahoo.com</span>
                 <span>📱 +91 70260 53581</span>
@@ -328,14 +331,26 @@ const PrintableResume = () => {
                 <div className="edu-school">MNGP, Pondicherry</div>
                 <div className="edu-year">2007</div>
               </div>
+
+              <h2 className="print-section-title" style={{ marginTop: '10px' }}>Certifications</h2>
+              <div className="cert-item-compact">
+                <div className="cert-name">Post Graduate Certificate in Technology Leadership and Innovation</div>
+                <div className="cert-issuer">
+                  Emeritus • Dec 2023 - Sep 2024 • 
+                  <a href="https://certificates.emeritus.org/11b877e5-0bc3-4237-80e9-5c87790dc6d0" className="print-link" target="_blank" rel="noopener noreferrer">
+                    View Certificate
+                  </a>
+                </div>
+              </div>
             </div>
 
             <div>
               <h2 className="print-section-title">Links & Contact</h2>
               <div className="links-compact">
-                <div>🔗 linkedin.com/in/gokul-elumalai-3a334b120/</div>
-                <div>💻 github.com/gokulegit</div>
-                <div>📧 gokul.jai_e@yahoo.com</div>
+                <div>🌐 <a href="https://gokulegit.github.io" className="print-link">gokulegit.github.io</a></div>
+                <div>🔗 <a href="https://linkedin.com/in/gokul-elumalai-3a334b120/" className="print-link">linkedin.com/in/gokul-elumalai-3a334b120/</a></div>
+                <div>💻 <a href="https://github.com/gokulegit" className="print-link">github.com/gokulegit</a></div>
+                <div>📧 <a href="mailto:gokul.jai_e@yahoo.com" className="print-link">gokul.jai_e@yahoo.com</a></div>
                 <div>📱 +91 70260 53581</div>
               </div>
             </div>
