@@ -350,6 +350,7 @@ const PrintableResume = () => {
                 <div>🌐 <a href="https://gokulegit.github.io" className="print-link">gokulegit.github.io</a></div>
                 <div>🔗 <a href="https://linkedin.com/in/gokul-elumalai-3a334b120/" className="print-link">linkedin.com/in/gokul-elumalai-3a334b120/</a></div>
                 <div>💻 <a href="https://github.com/gokulegit" className="print-link">github.com/gokulegit</a></div>
+                <div>🏆 <a href="https://leetcode.com/u/gokul_e_jai/" className="print-link">leetcode.com/u/gokul_e_jai/</a></div>
                 <div>📧 <a href="mailto:gokul.jai_e@yahoo.com" className="print-link">gokul.jai_e@yahoo.com</a></div>
                 <div>📱 +91 70260 53581</div>
               </div>

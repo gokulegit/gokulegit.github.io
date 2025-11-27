@@ -4,7 +4,7 @@ import './Experience.css';
 const Experience = () => {
   const experiences = [
     {
-      title: 'Staff Software Engineer & Scrum Master',
+      title: 'Staff Software Engineer',
       company: 'Intuit India',
       location: 'Ecospace, Bellandur, Bengaluru',
       period: '2020 - Present',
@@ -55,7 +55,7 @@ const Experience = () => {
       title: 'Freelancer Software Developer',
       company: 'Independent',
       location: 'Remote',
-      period: '2011 - 2013',
+      period: '2011 - 2013 (During my college days)',
       description: [
         '2 years freelancing journey with diverse technology stack',
         'Developed applications using PHP, JSP, ASP.NET, C# WPF',

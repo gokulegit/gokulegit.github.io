@@ -7,7 +7,7 @@ const Projects = () => {
       title: 'Data Conversion Automation',
       company: 'Intuit',
       description: 'Unraveled techniques for ProSystemFX and TurboTax conversion, introducing automation that compresses manual conversion duration from 2-3 hours to mere minutes. Automation coverage increased from 75% to 99%.',
-      tech: ['Python', 'IDA Disassembler', 'C#', 'ReactJs', 'Crank.js', 'TailwindCSS'],
+      tech: ['Python', 'IDA Disassembler', 'C#', 'Delphi 6, XE5'],
       category: 'Automation',
       impact: '75% → 99% automation, 2-3 hrs → minutes'
     },

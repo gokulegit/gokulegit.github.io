@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
+import Certifications from './components/Certifications';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Navigation from './components/Navigation';
@@ -22,19 +23,30 @@ function MainApp() {
       setScrollProgress(currentProgress);
 
       // Update active section based on scroll position
-      const sections = ['hero', 'about', 'experience', 'skills', 'projects', 'contact'];
+      const sections = ['hero', 'about', 'experience', 'skills', 'certifications', 'projects', 'contact'];
+      const scrollPosition = window.scrollY + 150; // Offset for navbar height
+      
+      let currentSection = 'hero';
+      
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
-          const rect = element.getBoundingClientRect();
-          if (rect.top <= 100 && rect.bottom >= 100) {
-            setActiveSection(section);
+          const offsetTop = element.offsetTop;
+          const offsetBottom = offsetTop + element.offsetHeight;
+          
+          if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
+            currentSection = section;
             break;
           }
         }
       }
+      
+      setActiveSection(currentSection);
     };
 
+    // Call handleScroll immediately to set initial state
+    handleScroll();
+    
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -47,6 +59,7 @@ function MainApp() {
       <About />
       <Experience />
       <Skills />
+      <Certifications />
       <Projects />
       <Contact />
     </div>

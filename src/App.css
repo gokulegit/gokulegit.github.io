@@ -219,6 +219,23 @@ section {
   }
 }
 
+/* Mobile Landscape Optimization */
+@media (max-width: 915px) and (orientation: landscape) {
+  .section-title {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+
+  section {
+    padding: 40px 20px;
+  }
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
